@@ -1,0 +1,38 @@
+# Install Debian
+
+first install `sudo`
+
+```sh
+su
+
+# install sudo
+apt install sudo
+# if you see "meaid change: please insert the disc labled", remove the "cdrom" line in /etc/apt/sources.list
+sudo usermod -a -G sudo hc
+
+# skip grub
+nano /etc/default/grub
+# set GRUB_TIMEOUT=0
+sudo update-grub
+
+# reboot
+systemctl reboot
+```
+
+then `. install.sh` to install all the softwares.
+
+## QT ERROR
+
+`qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.`
+
+```sh
+export QT_DEBUG_PLUGINS=1
+xnview
+# Cannot load library /opt/XnView/lib/platforms/libqxcb.so: (libxcb-icccm.so.4: cannot open shared object file:   > No such file or directory)
+ldd /opt/XnView/lib/platforms/libqxcb.so | grep "not found"
+libxcb-icccm.so.4 => not found
+libxcb-keysyms.so.1 => not found
+libxcb-icccm.so.4 => not found
+libxcb-keysyms.so.1 => not found
+sudo apt install "these lib"
+```
