@@ -1,16 +1,20 @@
 # Install Debian
 
-first install `sudo`
+after a pure install (without Desktop Environment)
+
+install `sudo`
 
 ```sh
 su
 
 # install sudo
-apt install sudo
 # if you see "meaid change: please insert the disc labled", remove the "cdrom" line in /etc/apt/sources.list
-sudo usermod -a -G sudo hc
+apt install sudo
 
-# skip grub
+# add yourself into sudo group
+sudo usermod -a -G sudo USERNAME
+
+# optional: skip grub
 nano /etc/default/grub
 # set GRUB_TIMEOUT=0
 sudo update-grub
