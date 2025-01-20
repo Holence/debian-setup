@@ -34,4 +34,15 @@
 	<patterns>*.png</patterns>
 	<image-files/>
 </action>
+<action>
+	<icon>emblem-photos</icon>
+	<name>Open Slide Show</name>
+	<submenu></submenu>
+	<unique-id>1737393447076097-1</unique-id>
+	<command>xnview %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.sld</patterns>
+	<text-files/>
+</action>
 </actions>
