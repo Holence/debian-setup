@@ -21,6 +21,17 @@ systemctl reboot
 
 then `. install.sh` to install all the softwares.
 
+## Drivers
+
+- Nvidia Driver: https://wiki.debian.org/NvidiaGraphicsDrivers
+
+## TODO
+
+- screenshot
+- fsearch
+
+# Other
+
 ## QT ERROR
 
 `qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.`

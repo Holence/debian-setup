@@ -4,7 +4,8 @@ cp ./bg.jpg ~/bg.jpg
 sudo apt install curl wget git
 sudo apt install make build-essential
 
-# pinyin
+# ibus-pinyin
+# or ibus-libpinyin?
 sudo apt install ibus ibus-pinyin
 
 # exec install.sh in each subdirectory
