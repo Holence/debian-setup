@@ -1,0 +1,2 @@
+- NotoColorEmoji.ttf
+- HackNerdFont-Regular.ttf <https://github.com/ryanoasis/nerd-fonts>
