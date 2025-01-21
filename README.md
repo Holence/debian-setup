@@ -31,7 +31,6 @@ then `. install.sh` to install all the softwares.
 
 ## TODO
 
-- screenshot
 - fsearch
 
 # Other
