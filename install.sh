@@ -1,8 +1,9 @@
 #!/bin/bash
 cp ./bg.jpg ~/bg.jpg
 
-sudo apt install curl wget git
-sudo apt install make build-essential
+sudo apt install curl wget git strace
+sudo apt install make build-essential tldr
+sudo apt install htop
 
 # ibus-pinyin
 # or ibus-libpinyin?
