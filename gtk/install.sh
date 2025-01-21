@@ -4,7 +4,7 @@ mkdir ~/.icons/
 wget https://github.com/Holence/StrongholdCursor/releases/download/v1.0.0/StrongholdCursor.tar.xz
 tar xf ./StrongholdCursor.tar.xz --directory ~/.icons/
 
-mkdir ~/.theme/
+mkdir ~/.themes/
 wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker.tar.xz
 tar xf ./Nordic-darker.tar.xz --directory ~/.themes/
 
