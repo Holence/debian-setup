@@ -25,13 +25,16 @@ systemctl reboot
 
 then `. install.sh` to install all the softwares.
 
+- photo: xnview
+- music: **TODO** 
+- video: vlc
+- pdf: evince
+- office: **TODO**
+- search: **TODO** fsearch
+
 ## Drivers
 
 - Nvidia Driver: https://wiki.debian.org/NvidiaGraphicsDrivers
-
-## TODO
-
-- fsearch
 
 # Other
 
