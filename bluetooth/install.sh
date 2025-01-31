@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install bluetoothctl
+sudo apt install bluez
 # scan on
 # devices
 # pair ##:##:##:##:##:##
