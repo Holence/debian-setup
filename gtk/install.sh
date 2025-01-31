@@ -6,6 +6,9 @@ wget https://github.com/Holence/StrongholdCursor/releases/download/v1.0.0/Strong
 fi
 tar xf ./StrongholdCursor.tar.xz --directory ~/.icons/
 
+mkdir -p ~/.icons/default
+cp index.theme ~/.icons/default
+
 mkdir ~/.themes/
 if [[ ! -f "Nordic-darker.tar.xz" ]]; then
 wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker.tar.xz
