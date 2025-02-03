@@ -5,9 +5,8 @@ sudo apt install curl wget git strace
 sudo apt install make build-essential tldr
 sudo apt install htop
 
-# ibus-pinyin
-# or ibus-libpinyin?
-sudo apt install ibus ibus-pinyin
+# ibus
+sudo apt install ibus ibus-libpinyin
 
 # exec install.sh in each subdirectory
 # dont change order
