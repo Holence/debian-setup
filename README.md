@@ -53,3 +53,16 @@ libxcb-icccm.so.4 => not found
 libxcb-keysyms.so.1 => not found
 sudo apt install "these lib"
 ```
+
+## PolicyKit
+
+when installing steam
+
+```
+polkit-agent-helper-1: error response to PolicyKit daemon: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: No session for cookie
+```
+
+```sh
+# manually start the agent process
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+```
