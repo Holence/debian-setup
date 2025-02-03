@@ -66,3 +66,18 @@ polkit-agent-helper-1: error response to PolicyKit daemon: GDBus.Error:org.freed
 # manually start the agent process
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 ```
+
+## Steam Proton with NTFS
+
+<https://www.reddit.com/r/linux_gaming/comments/wc6wzj/correctly_mount_ntfs_for_steam_proton_games/>
+
+**Avoid using NTFS with Steam on Linux. It's really not recommended.**
+
+0. Add your ntfs Storage
+  - Settings -> Storage -> Add Driver -> Select a directory that has "steamapps"
+1. Look for a directory called "compatdata" under ~/.steam.
+  - It'll probably take some digging, as it's often buried in something like ~/.steam/steam/steamapps . . .
+2. Make a symbolic link from that folder to the identical location on the NTFS Steam Library.
+  - delete /path/to/ntfs/SteamLibrary/compatdata
+  - `ln -s ~/.steam/foo/bar/compatdata /path/to/ntfs/SteamLibrary/compatdata`
+3. Watch and be amazed at Proton's "It just works"-ness!
