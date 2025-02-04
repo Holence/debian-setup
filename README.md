@@ -32,10 +32,6 @@ then `. install.sh` to install all the softwares.
 - office: **TODO**
 - search: **TODO** fsearch
 
-## Drivers
-
-- Nvidia Driver: https://wiki.debian.org/NvidiaGraphicsDrivers
-
 # Other
 
 ## QT ERROR
