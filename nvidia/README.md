@@ -1,3 +1,7 @@
+# Nvidia Driver
+
+for running CUDA-compiled programs
+
 ```sh
 sudo apt-get install build-essential gcc-multilib dkms
 
@@ -13,4 +17,15 @@ sudo bash NVIDIA-Linux-x86_64-550.144.03.run
 
 # checking
 nvidia-smi
+```
+
+# CUDA Toolkit
+
+for compiling CUDA code into CUDA programs (like gcc tool chain)
+
+```sh
+# https://developer.nvidia.com/cuda-downloads
+
+# cheking
+nvcc
 ```
