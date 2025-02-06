@@ -26,8 +26,10 @@ bash -c "cd yandex; bash install.sh"
 
 # bash -c "cd bcompare; bash install.sh"
 # bash -c "cd bluetooth; bash install.sh"
-# bash -c "cd evince; bash install.sh"
 # bash -c "cd xnview; bash install.sh"
-# bash -c "cd vlc; bash install.sh"
+
+# sudo apt install evince
+# sudo apt install vlc
+# sudo apt install fsearch
 
 echo "Please Reboot!"

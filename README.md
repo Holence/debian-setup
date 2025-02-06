@@ -30,7 +30,8 @@ then `. install.sh` to install all the softwares.
 - video: vlc
 - pdf: evince
 - office: **TODO**
-- search: **TODO** fsearch
+- video record: obs or simplescreenrecorder
+- search: fsearch
 
 # Other
 
