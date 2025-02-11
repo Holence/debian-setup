@@ -1,2 +1,5 @@
-- NotoColorEmoji.ttf
-- HackNerdFont-Regular.ttf <https://github.com/ryanoasis/nerd-fonts>
+- NotoColorEmoji
+- HackNerdFont-Regular <https://github.com/ryanoasis/nerd-fonts>
+
+- MicrosoftYahei
+- SimSun
