@@ -1,7 +1,15 @@
 #!/bin/bash
-sudo apt install thunar gnome-keyring thunar-archive-plugin 
+echo "${COLOR_GREEN}install thunar...${COLOR_END}"
+sudo apt install thunar
+
+echo "${COLOR_GREEN}install gnome-keyring...${COLOR_END}"
+sudo apt install gnome-keyring
+
+echo "${COLOR_GREEN}install thunar-archive-plugin...${COLOR_END}"
+sudo apt install thunar-archive-plugin
 
 # for Android MTP transfer
+echo "${COLOR_GREEN}install gvfs-backends...${COLOR_END}"
 sudo apt install gvfs-backends
 
 mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/

@@ -34,3 +34,4 @@ alias hibernate='systemctl hibernate'
 alias reboot='systemctl reboot'
 
 alias git-revert-perm='git diff -p -R --no-color | grep -E "^(diff|(old|new) mode)" --color=never | git apply'
+alias check-CRLf='find . -type f -exec file {} \; | grep CRLF'

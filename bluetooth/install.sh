@@ -1,12 +1,16 @@
 #!/bin/bash
-
+echo "${COLOR_GREEN}install bluetooth...${COLOR_END}"
 sudo apt install bluez
 
-# sudo rfkill unblock all
+sudo apt install rfkill
+sudo rfkill unblock all
 
-# bluetoothctl
-# scan on
-# devices
-# pair ##:##:##:##:##:##
-# connect ##:##:##:##:##:##
-# trust ##:##:##:##:##:##
+echo "${COLOR_MAGENTA}
+> bluetoothctl
+> scan on
+> devices
+> pair ##:##:##:##:##:##
+> connect ##:##:##:##:##:##
+> trust ##:##:##:##:##:##
+${COLOR_END}
+"

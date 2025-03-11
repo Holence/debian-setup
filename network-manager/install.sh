@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "${COLOR_GREEN}install network-manager...${COLOR_END}"
 sudo apt install network-manager
 
 # nmcli

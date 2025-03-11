@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "${COLOR_GREEN}install bcompare...${COLOR_END}"
 
 if [[ ! -f "DEB-GPG-KEY-scootersoftware.asc" ]]; then
 wget https://www.scootersoftware.com/DEB-GPG-KEY-scootersoftware.asc

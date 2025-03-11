@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "${COLOR_GREEN}install strongswan...${COLOR_END}"
 sudo apt update && sudo apt upgrade
 sudo apt install strongswan libcharon-extra-plugins
 sudo cp ./ipsec.secrets /etc/ipsec.secrets

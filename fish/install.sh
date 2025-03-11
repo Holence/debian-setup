@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "${COLOR_GREEN}install fish...${COLOR_END}"
 sudo apt install fish
 
 # set fish as default shell

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "${COLOR_GREEN}install StrongholdCursor...${COLOR_END}"
 mkdir ~/.icons/
 if [[ ! -f "StrongholdCursor.tar.xz" ]]; then
 wget https://github.com/Holence/StrongholdCursor/releases/download/v1.0.0/StrongholdCursor.tar.xz
@@ -9,6 +9,7 @@ tar xf ./StrongholdCursor.tar.xz --directory ~/.icons/
 mkdir -p ~/.icons/default
 cp index.theme ~/.icons/default
 
+echo "${COLOR_GREEN}install Nordic-darker...${COLOR_END}"
 mkdir ~/.themes/
 if [[ ! -f "Nordic-darker.tar.xz" ]]; then
 wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker.tar.xz
