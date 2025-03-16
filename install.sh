@@ -54,6 +54,5 @@ bash -c "cd yandex; bash install.sh"
 
 # sudo apt install evince
 # sudo apt install vlc
-# sudo apt install fsearch
 
 echo "Please Reboot!"
