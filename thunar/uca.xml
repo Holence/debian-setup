@@ -5,12 +5,17 @@
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
 	<unique-id>1737219515131061-1</unique-id>
-	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<command>if [ -d %f ]; then exo-open --working-directory %f --launch TerminalEmulator; else exo-open --working-directory %d --launch TerminalEmulator; fi</command>
 	<description></description>
-	<range></range>
+	<range>*</range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
 </action>
 <action>
 	<icon>vscode</icon>
@@ -28,10 +33,10 @@
 	<name>Convert to JPEG</name>
 	<submenu></submenu>
 	<unique-id>1737376480170674-2</unique-id>
-	<command>convert %f -quality 95 &quot;$(basename %f .png).jpg&quot;</command>
+	<command>for f in %F ; do convert &quot;$f&quot; -quality 95 &quot;$(basename &quot;$f&quot; .png).jpg&quot; ; done</command>
 	<description></description>
 	<range>*</range>
-	<patterns>*.png</patterns>
+	<patterns>*</patterns>
 	<image-files/>
 </action>
 <action>
@@ -40,9 +45,20 @@
 	<submenu></submenu>
 	<unique-id>1737393447076097-1</unique-id>
 	<command>xnview %f</command>
-	<description></description>
+	<description>xnview&apos;s slide show</description>
 	<range>*</range>
 	<patterns>*.sld</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon>python3.11</icon>
+	<name>Exec Python Script Here</name>
+	<submenu></submenu>
+	<unique-id>1742133603203534-1</unique-id>
+	<command>f=%f; cmd=&quot;python3 \&quot;$f\&quot;; exec bash&quot;; xfce4-terminal --command &quot;bash -c &apos;$cmd&apos;&quot;</command>
+	<description></description>
+	<range></range>
+	<patterns>*.py</patterns>
 	<text-files/>
 </action>
 </actions>
