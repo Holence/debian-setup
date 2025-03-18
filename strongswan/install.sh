@@ -6,5 +6,8 @@ sudo cp ./ipsec.secrets /etc/ipsec.secrets
 sudo cp ./ipsec.conf /etc/ipsec.conf
 sudo cp ./constraints.conf /etc/strongswan.d/charon/constraints.conf
 sudo cp ./bypass-lan.conf /etc/strongswan.d/charon/bypass-lan.conf
-sudo wget https://downloads.nordcdn.com/certificates/root.pem -O /etc/ipsec.d/cacerts/NordVPN.pem
+if [[ ! -f "NordVPN.pem" ]]; then
+wget https://downloads.nordcdn.com/certificates/root.pem -O NordVPN.pem
+fi
+sudo cp NordVPN.pem /etc/ipsec.d/cacerts/NordVPN.pem
 sudo ipsec restart

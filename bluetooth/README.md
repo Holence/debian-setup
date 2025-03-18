@@ -49,3 +49,21 @@ sudo service bluetooth restart
 ## 蓝牙莫名其妙就不能连了
 
 `sudo rfkill unblock all`
+
+## 蓝牙耳机可以pair，却无法connect
+
+https://askubuntu.com/questions/1020257/bluez5-cannot-connect-to-a-paired-bluetooth-device-on-ubuntu-17-10
+
+```
+[CHG] Device FC:58:FA:A1:C2:70 ServicesResolved: yes
+[CHG] Device FC:58:FA:A1:C2:70 Paired: yes
+Pairing successful
+[CHG] Device FC:58:FA:A1:C2:70 ServicesResolved: no
+[CHG] Device FC:58:FA:A1:C2:70 Connected: no
+[CHG] Controller 6C:0B:84:27:43:66 Discoverable: no
+[bluetooth]# connect FC:58:FA:A1:C2:70 
+Attempting to connect to FC:58:FA:A1:C2:70
+Failed to connect: org.bluez.Error.Failed
+```
+
+`sudo apt install pulseaudio-module-bluetooth`
