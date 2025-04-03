@@ -6,8 +6,8 @@ wget https://github.com/Holence/StrongholdCursor/releases/download/v1.0.0/Strong
 fi
 tar xf ./StrongholdCursor.tar.xz --directory ~/.icons/
 
-mkdir -p ~/.icons/default
-cp index.theme ~/.icons/default
+mkdir -p ~/.icons/default/
+cp index.theme ~/.icons/default/
 
 echo "${COLOR_GREEN}install Nordic-darker...${COLOR_END}"
 mkdir ~/.themes/
@@ -19,3 +19,9 @@ tar xf ./Nordic-darker.tar.xz --directory ~/.themes/
 # use `lxappearance` to generate `~/.config/gtk-3.0/settings.ini`
 mkdir -p ~/.config/gtk-3.0/
 cp settings.ini ~/.config/gtk-3.0/
+
+# root use the same
+sudo mkdir /root/.config -p
+sudo ln -sf ~/.config/gtk-3.0/ /root/.config/
+sudo ln -sf ~/.themes/ /root/
+sudo ln -sf ~/.icons/ /root/

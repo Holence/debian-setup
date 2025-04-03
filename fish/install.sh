@@ -4,6 +4,7 @@ sudo apt install fish
 
 # set fish as default shell
 chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish root
 
 mkdir -p ~/.config/fish
 cp ./config.fish ~/.config/fish/config.fish
