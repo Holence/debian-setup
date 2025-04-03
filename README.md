@@ -23,11 +23,11 @@ sudo update-grub
 systemctl reboot
 ```
 
-then `. install.sh` to install all the softwares.
+then `bash install.sh` to install all the softwares.
 
 - photo: xnview
-- music: **TODO** 
-- video: vlc
+- music: wait for AIMP 
+- video: smplayer
 - pdf: evince
 - office: **TODO**
 - video record: obs or simplescreenrecorder

@@ -41,6 +41,7 @@ bash -c "cd xfce4-terminal; bash install.sh"
 bash -c "cd gtk; bash install.sh"
 bash -c "cd fish; bash install.sh"
 bash -c "cd fonts; bash install.sh"
+bash -c "cd fsearch; bash install.sh"
 bash -c "cd ipsec; bash install.sh"
 bash -c "cd network-manager; bash install.sh"
 bash -c "cd sublime; bash install.sh"
@@ -49,10 +50,10 @@ bash -c "cd yandex; bash install.sh"
 
 # bash -c "cd bcompare; bash install.sh"
 # bash -c "cd bluetooth; bash install.sh"
-# bash -c "cd xnview; bash install.sh"
 # bash -c "cd k380; bash install.sh"
+# bash -c "cd xnview; bash install.sh"
+# bash -c "cd smplayer; bash install.sh"
 
 # sudo apt install evince
-# sudo apt install vlc
 
 echo "Please Reboot!"
