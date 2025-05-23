@@ -30,6 +30,8 @@ echo "${COLOR_GREEN}install htop...${COLOR_END}"
 sudo apt install htop
 echo "${COLOR_GREEN}install ibus ibus-libpinyin...${COLOR_END}"
 sudo apt install ibus ibus-libpinyin
+echo "${COLOR_GREEN}install ca-certificates...${COLOR_END}"
+sudo apt install ca-certificates
 
 # exec install.sh in each subdirectory
 # dont change order
