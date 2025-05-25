@@ -5,6 +5,10 @@ sudo apt install thunar
 echo "${COLOR_GREEN}install gnome-keyring...${COLOR_END}"
 sudo apt install gnome-keyring
 
+echo "${COLOR_GREEN}replace xarchiver with file-roller...${COLOR_END}"
+sudo apt remove xarchiver
+sudo apt install file-roller
+
 echo "${COLOR_GREEN}install thunar-archive-plugin...${COLOR_END}"
 sudo apt install thunar-archive-plugin
 
