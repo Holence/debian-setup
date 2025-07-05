@@ -2,7 +2,7 @@
 echo "${COLOR_GREEN}install ibus ibus-rime...${COLOR_END}"
 sudo apt install ibus ibus-rime
 
-make -p ~/.config/ibus/rime
+mkdir -p ~/.config/ibus/rime
 
 # rime-ice
 if [[ -f "rime-ice.tar.gz" ]]; then
