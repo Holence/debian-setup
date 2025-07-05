@@ -28,8 +28,6 @@ echo "${COLOR_GREEN}install make build-essential tldr...${COLOR_END}"
 sudo apt install make build-essential tldr
 echo "${COLOR_GREEN}install htop...${COLOR_END}"
 sudo apt install htop
-echo "${COLOR_GREEN}install ibus ibus-libpinyin...${COLOR_END}"
-sudo apt install ibus ibus-libpinyin
 echo "${COLOR_GREEN}install ca-certificates...${COLOR_END}"
 sudo apt install ca-certificates
 
@@ -45,6 +43,7 @@ bash -c "cd fish; bash install.sh"
 bash -c "cd fonts; bash install.sh"
 bash -c "cd fsearch; bash install.sh"
 bash -c "cd strongswan; bash install.sh"
+bash -c "cd ibus; bash install.sh"
 bash -c "cd network-manager; bash install.sh"
 bash -c "cd sublime; bash install.sh"
 bash -c "cd vscode; bash install.sh"
