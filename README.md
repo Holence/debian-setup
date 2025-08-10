@@ -51,19 +51,6 @@ libxcb-keysyms.so.1 => not found
 sudo apt install "these lib"
 ```
 
-## PolicyKit
-
-when installing steam
-
-```
-polkit-agent-helper-1: error response to PolicyKit daemon: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: No session for cookie
-```
-
-```sh
-# manually start the agent process
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-```
-
 ## Steam Proton with NTFS
 
 <https://www.reddit.com/r/linux_gaming/comments/wc6wzj/correctly_mount_ntfs_for_steam_proton_games/>
@@ -78,3 +65,25 @@ polkit-agent-helper-1: error response to PolicyKit daemon: GDBus.Error:org.freed
   - delete /path/to/ntfs/SteamLibrary/compatdata
   - `ln -s ~/.steam/foo/bar/compatdata /path/to/ntfs/SteamLibrary/compatdata`
 3. Watch and be amazed at Proton's "It just works"-ness!
+
+# TODO
+
+- update nju apt sources
+- debian 13 dont have tldr
+- file-roller is too heavy
+- fix dwm dotfile/README
+
+## PolicyKit
+
+Solved in debian 13?
+
+when installing steam
+
+```
+polkit-agent-helper-1: error response to PolicyKit daemon: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: No session for cookie
+```
+
+```sh
+# manually start the agent process
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+```

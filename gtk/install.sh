@@ -16,7 +16,7 @@ wget https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker
 fi
 tar xf ./Nordic-darker.tar.xz --directory ~/.themes/
 
-# use `lxappearance` to generate `~/.config/gtk-3.0/settings.ini`
+# you can use `lxappearance` to generate `~/.config/gtk-3.0/settings.ini`
 mkdir -p ~/.config/gtk-3.0/
 cp settings.ini ~/.config/gtk-3.0/
 
@@ -25,3 +25,10 @@ sudo mkdir /root/.config -p
 sudo ln -sf ~/.config/gtk-3.0/ /root/.config/
 sudo ln -sf ~/.themes/ /root/
 sudo ln -sf ~/.icons/ /root/
+
+# icon theme
+echo "${COLOR_GREEN}install MoreWaita icon theme...${COLOR_END}"
+if [[ ! -d "MoreWaita" ]]; then
+git clone https://github.com/somepaulo/MoreWaita.git
+fi
+cd MoreWaita && bash install.sh
