@@ -2,7 +2,9 @@
 echo "${COLOR_GREEN}install k380...${COLOR_END}"
 sudo apt install build-essential
 
+if [[ ! -d "k380-function-keys-conf" ]]; then
 git clone https://github.com/jergusg/k380-function-keys-conf.git
+fi
 
 cd k380-function-keys-conf && sudo make install
 

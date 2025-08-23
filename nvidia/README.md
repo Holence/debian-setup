@@ -3,7 +3,14 @@
 for running CUDA-compiled programs
 
 ```sh
-sudo apt-get install build-essential gcc-multilib dkms
+sudo apt install build-essential gcc-multilib dkms
+
+# install kernel headers
+uname -r
+sudo apt install linux-header-6.???-amd64
+
+# opengl related lib
+sudo apt install libglvnd-dev
 
 # disable Nouveau
 sudo cp nvidia-installer-disable-nouveau.conf /etc/modprobe.d/nvidia-installer-disable-nouveau.conf

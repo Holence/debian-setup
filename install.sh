@@ -49,11 +49,11 @@ bash -c "cd strongswan; bash install.sh"
 bash -c "cd bluetooth; bash install.sh"
 
 # other software
-bash -c "cd fsearch; bash install.sh"
-bash -c "cd network-manager; bash install.sh"
-bash -c "cd sublime; bash install.sh"
-bash -c "cd vscode; bash install.sh"
-bash -c "cd yandex; bash install.sh"
+# bash -c "cd fsearch; bash install.sh"
+# bash -c "cd network-manager; bash install.sh"
+# bash -c "cd sublime; bash install.sh"
+# bash -c "cd vscode; bash install.sh"
+# bash -c "cd yandex; bash install.sh"
 
 # bash -c "cd bcompare; bash install.sh"
 # bash -c "cd xnview; bash install.sh"

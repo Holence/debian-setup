@@ -16,6 +16,11 @@ sudo apt install thunar-archive-plugin
 echo "${COLOR_GREEN}install gvfs-backends...${COLOR_END}"
 sudo apt install gvfs-backends
 
+# Thunar relies on a Polkit authentication agent (e.g., xfce-polkit, lxpolkit, policykit-1-gnome)
+# to handle privilege escalation and prompt for a password when a privileged action, such as mount
+echo "${COLOR_GREEN}install lxpolkit...${COLOR_END}"
+sudo apt install lxpolkit
+
 mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 cp thunar.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
