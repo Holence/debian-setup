@@ -66,13 +66,6 @@ sudo apt install "these lib"
   - `ln -s ~/.steam/foo/bar/compatdata /path/to/ntfs/SteamLibrary/compatdata`
 3. Watch and be amazed at Proton's "It just works"-ness!
 
-# TODO
-
-- update nju apt sources
-- debian 13 dont have tldr
-- file-roller is too heavy
-- fix dwm dotfile/README
-
 ## PolicyKit
 
 Solved in debian 13?

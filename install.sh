@@ -22,12 +22,14 @@ sudo cp sources.list /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade
 
-echo "${COLOR_GREEN}install curl wget git strace...${COLOR_END}"
-sudo apt install curl wget git strace
-echo "${COLOR_GREEN}install make build-essential tldr...${COLOR_END}"
-sudo apt install make build-essential tldr
-echo "${COLOR_GREEN}install htop...${COLOR_END}"
-sudo apt install htop
+echo "${COLOR_GREEN}install curl wget git...${COLOR_END}"
+sudo apt install curl wget git
+echo "${COLOR_GREEN}install make build-essential...${COLOR_END}"
+sudo apt install make build-essential
+echo "${COLOR_GREEN}install tldr...${COLOR_END}"
+sudo apt install tealdeer
+echo "${COLOR_GREEN}install htop strace...${COLOR_END}"
+sudo apt install htop strace
 echo "${COLOR_GREEN}install ca-certificates...${COLOR_END}"
 sudo apt install ca-certificates
 
