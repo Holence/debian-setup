@@ -2,8 +2,6 @@
 
 after a pure install (without Desktop Environment)
 
-install `sudo`
-
 ```sh
 su
 
@@ -34,6 +32,17 @@ then `bash install.sh` to install all the softwares.
 - search: fsearch
 
 # Other
+
+## install without network
+
+manually modify network interfaces
+
+```
+/etc/network/interfaces
+        auto enp3s0
+        iface enp3s0 inet dhcp
+systemctl restart networking.service
+```
 
 ## QT ERROR
 
