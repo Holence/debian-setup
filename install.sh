@@ -59,7 +59,9 @@ bash -c "cd bluetooth; bash install.sh"
 # bash -c "cd xnview; bash install.sh"
 # bash -c "cd smplayer; bash install.sh"
 # bash -c "cd onedrive; bash install.sh"
+
 # sudo apt install evince
+# sudo apt install qbittorrent
 
 # bash -c "cd k380; bash install.sh"
 
