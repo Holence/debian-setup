@@ -10,5 +10,8 @@ sudo apt update
 echo "${COLOR_GREEN}install vscode...${COLOR_END}"
 sudo apt install code
 
-echo 'Remember to Preferences: Configure Runtime Arguments'
-echo 'and add "password-store":"gnome-libsecret"'
+echo "${COLOR_MAGENTA}
+Remember to Preferences: Configure Runtime Arguments
+and add \"password-store\":\"gnome-libsecret\"
+${COLOR_END}
+"

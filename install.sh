@@ -60,8 +60,10 @@ bash -c "cd bluetooth; bash install.sh"
 # bash -c "cd smplayer; bash install.sh"
 # bash -c "cd onedrive; bash install.sh"
 
-# sudo apt install evince
 # sudo apt install qbittorrent
+# sudo apt install gimp
+# sudo apt install peek
+# sudo apt install evince
 
 # bash -c "cd k380; bash install.sh"
 

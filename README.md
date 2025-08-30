@@ -1,4 +1,4 @@
-# Install Debian
+# Install Debian 13
 
 after a pure install (without Desktop Environment)
 
@@ -21,15 +21,35 @@ sudo update-grub
 systemctl reboot
 ```
 
-then `bash install.sh` to install all the softwares.
+## Softwares
 
-- photo: xnview
-- music: wait for AIMP 
+`bash install.sh` to install all the softwares.
+
+- dwm + dmenu + slock
+
+- shell: fish
+- terminal: xfce4-terminal
+- file explorer: thunar
+
+- theme: Nordic-darker
+- icon: MoreWaita
+- cursor: StrongholdCursor
+
+- input method: ibus-rime
+- vpn: strongswan
+
+- file search: fsearch
+- browser: yandex-browser
+- text editor: sublime
+
+- image: xnview + gimp
+- music: wait for AIMP
 - video: smplayer
+- screenshot: xfce4-screenshooter
+- downloader: qbittorrent
+- recorder: peek/obs
 - pdf: evince
 - office: **TODO**
-- video record: obs or simplescreenrecorder
-- search: fsearch
 
 # Other
 
@@ -74,18 +94,3 @@ sudo apt install "these lib"
   - delete /path/to/ntfs/SteamLibrary/compatdata
   - `ln -s ~/.steam/foo/bar/compatdata /path/to/ntfs/SteamLibrary/compatdata`
 3. Watch and be amazed at Proton's "It just works"-ness!
-
-## PolicyKit
-
-Solved in debian 13?
-
-when installing steam
-
-```
-polkit-agent-helper-1: error response to PolicyKit daemon: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: No session for cookie
-```
-
-```sh
-# manually start the agent process
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-```

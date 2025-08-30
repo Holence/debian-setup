@@ -4,7 +4,9 @@ sudo apt install ibus ibus-rime
 
 mkdir -p ~/.config/ibus/rime
 
-# rime-ice
-if [[ -f "rime-ice.tar.gz" ]]; then
-tar xf ./rime-ice.tar.gz --directory ~/.config/ibus/rime/
-fi
+echo "${COLOR_MAGENTA}
+# choose a rime config packs (such as rime-ice)
+# extrace into ~/.config/ibus/rime/
+> tar xf ./rime-ice.tar.gz --directory ~/.config/ibus/rime/
+${COLOR_END}
+"
