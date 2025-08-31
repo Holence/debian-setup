@@ -94,3 +94,8 @@ sudo apt install "these lib"
   - delete /path/to/ntfs/SteamLibrary/compatdata
   - `ln -s ~/.steam/foo/bar/compatdata /path/to/ntfs/SteamLibrary/compatdata`
 3. Watch and be amazed at Proton's "It just works"-ness!
+
+## X11 screen tearing
+
+- smplayer preference, "General" -> "Video" -> "Output Driver = vdpau", "Performance" -> "Hardware Decoding = vdapu"
+- or nvidia-setting, "X Server Display Configuration" -> "Advanced..." -> "Force Composition Pipeling"
