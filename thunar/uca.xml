@@ -72,4 +72,16 @@
 	<patterns>*</patterns>
 	<other-files/>
 </action>
+<action>
+	<icon>add-folder-to-archive</icon>
+	<name>Zip each folder</name>
+	<submenu></submenu>
+	<unique-id>1759488757808849-1</unique-id>
+	<command>for f in %F ; do zip -FS -r &quot;$f&quot;.zip &quot;$f&quot; ; done</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
 </actions>
