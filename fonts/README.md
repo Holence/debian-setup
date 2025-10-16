@@ -1,5 +1,5 @@
-- NotoColorEmoji
-- HackNerdFont-Regular <https://github.com/ryanoasis/nerd-fonts>
-
+- [NotoColorEmoji](https://fonts.google.com/noto/specimen/Noto+Color+Emoji)
+- [HackNerdFont-Regular](https://github.com/ryanoasis/nerd-fonts)
+- [LXGWWenKai-Regular](https://github.com/lxgw/LxgwWenKai)
 - MicrosoftYahei
 - SimSun
