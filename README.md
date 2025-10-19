@@ -99,3 +99,14 @@ sudo apt install "these lib"
 
 - smplayer preference, "General" -> "Video" -> "Output Driver = vdpau", "Performance" -> "Hardware Decoding = vdapu"
 - or nvidia-setting, "X Server Display Configuration" -> "Advanced..." -> "Force Composition Pipeling"
+
+## High DPI
+
+```sh
+# tty font
+sudo dpkg-reconfigure console-setup
+
+# add these in .xsession
+export GDK_SCALE=2
+export QT_SCALE_FACTOR=2
+```
