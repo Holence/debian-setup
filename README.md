@@ -111,12 +111,13 @@ export GDK_SCALE=2
 export QT_SCALE_FACTOR=2
 ```
 
-## Disabling touchpad as a wakeup source
+## Disabling touchpad/keyboard as wakeup source
 
 follow this: [How to prevent TrackPoint or touchpad events from waking up ThinkPad T14 Gen 5 AMD from suspend | Nobuto Murata](https://nobuto-m.github.io/post/2025/how-to-prevent-trackpoint-events-from-waking-up-thinkpad-t14-gen-5-amd-from-suspend)
 
 ```sh
 $ sudo nano /etc/udev/rules.d/99-local-disable-wakeup-events.rules
 KERNEL=="i2c-ELAN06E8:00", SUBSYSTEM=="i2c", DRIVERS=="i2c_hid_acpi", ATTR{power/wakeup}="disabled"
+KERNEL=="serio0", SUBSYSTEM=="serio", DRIVERS=="atkbd", ATTR{power/wakeup}="disabled"
 $ sudo udevadm control --reload && sudo udevadm trigger
 ```
