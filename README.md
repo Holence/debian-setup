@@ -121,3 +121,12 @@ KERNEL=="i2c-ELAN06E8:00", SUBSYSTEM=="i2c", DRIVERS=="i2c_hid_acpi", ATTR{power
 KERNEL=="serio0", SUBSYSTEM=="serio", DRIVERS=="atkbd", ATTR{power/wakeup}="disabled"
 $ sudo udevadm control --reload && sudo udevadm trigger
 ```
+
+## Update Firmware
+
+```
+sudo apt install fwupd
+sudo fwupdmgr refresh
+sudo fwupdmgr get-updates
+sudo fwupdmgr update
+```
