@@ -44,7 +44,7 @@ systemctl reboot
 
 - image: xnview + gimp
 - music: wait for AIMP
-- video: smplayer
+- video: mpv
 - screenshot: xfce4-screenshooter
 - downloader: qbittorrent
 - recorder: peek/obs
