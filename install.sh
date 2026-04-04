@@ -22,8 +22,8 @@ sudo cp sources.list /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade
 
-echo "${COLOR_GREEN}install curl wget git...${COLOR_END}"
-sudo apt install curl wget git
+echo "${COLOR_GREEN}install curl wget...${COLOR_END}"
+sudo apt install curl wget
 echo "${COLOR_GREEN}install make build-essential...${COLOR_END}"
 sudo apt install make build-essential
 echo "${COLOR_GREEN}install tldr...${COLOR_END}"
@@ -36,6 +36,7 @@ sudo apt install ca-certificates
 # exec install.sh in each subdirectory
 
 # core software
+bash -c "cd git; bash install.sh"
 bash -c "cd fish; bash install.sh"
 bash -c "cd dwm; bash install.sh"
 bash -c "cd dmenu; bash install.sh"
