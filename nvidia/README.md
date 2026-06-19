@@ -36,3 +36,11 @@ for compiling CUDA code into CUDA programs (like gcc tool chain)
 # cheking
 nvcc
 ```
+
+可能需要手动添加PATH
+
+```
+# ~/.config/fish/config.fish
+fish_add_path --path /usr/local/cuda/bin
+fish_add_path --path /usr/local/cuda/lib64
+```
