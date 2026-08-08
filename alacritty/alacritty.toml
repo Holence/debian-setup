@@ -1,9 +1,17 @@
 [general]
 import = [
     "~/.config/alacritty/themes/solarized_mod.toml",
-    # "~/.config/alacritty/themes/monokai_pro.toml",
-    # "~/.config/alacritty/themes/monokai.toml",
 ]
 
 [colors]
 draw_bold_text_with_bright_colors = true
+
+[mouse]
+bindings = [
+    { mouse = "WheelUp", mods = "Alt", action = "ScrollHalfPageUp" },
+    { mouse = "WheelDown", mods = "Alt", action = "ScrollHalfPageDown" },
+]
+
+[bell]
+animation = "Linear"
+duration = 250
