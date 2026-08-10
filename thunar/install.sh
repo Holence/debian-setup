@@ -22,6 +22,7 @@ sudo apt install imagemagick
 
 mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 cp thunar.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+cp helpers.rc ~/.config/xfce4/
 
 mkdir -p ~/.config/Thunar/
 cp accels.scm ~/.config/Thunar/
